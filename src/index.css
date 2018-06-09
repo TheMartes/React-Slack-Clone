@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.loginWrapper {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('/assets/texture.png');
+
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+}
+
+.loginWrapper h1 {
+  font-weight: 300;
+}
+
+.usernameForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.usernameForm input[type="text"] {
+  padding: 0.5rem 1rem;
+  border: 1px solid #cbcbcb;
+  font-size: 0.75rem;
+}
+
+.usernameForm input[type="text"]:focus {
+  border: 1px solid black;
+  outline: 0;
+}
+
+.usernameForm input[type="submit"] {
+  border: 1px solid #3490DC;
+  outline: 0;
+  margin: .5rem 0;
+  padding: .5rem 0;
+  background: #3490DC;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: .5s all ease-in;
+}
+
+.usernameForm input[type="submit"]:hover {
+  cursor: pointer;
+  background: rgb(38, 106, 162);
+  border: 1px solid rgb(38, 106, 162);
+}
+
+footer {
+  background: url('/assets/texture.png'); 
+  font-family: 'Open Sans';
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+footer a {
+  text-decoration: none;
+  margin: 3px;
+  color: royalblue;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.onlineList {
+  background-color: #1C3D5A;
+  color: white;
+  padding: 1rem 2rem;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  height: 100vh;
+  position: fixed;
+}
+
+.onlineList h2 {
+  font-weight: 300;
+}
+
+.onlineList ul {
+  list-style: none;
+  padding: 0;
+  width: 220px;
+}
+
+.indicator {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.online {
+  background-color: rgb(0, 255, 0);
+}
+
+.offline {
+  background-color: red;
+}
+
+.chat {
+  height: 100vh;
+  width: 100%;
+  margin-left: 300px;
+  font-family: 'Open Sans'
+}
+
+.chat h1 {
+  margin-bottom: 0;
+  height: 5vh;
+}
+
+.chat p {
+  margin-top: 0;
+  height: 3vh;
+}
+
+.chat ul {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  height: 75vh;
+  overflow: auto;
+}
+
+.chat ul li div span {
+  font-weight: 600;
+}
+
+.chat ul li {
+  padding: .5rem;
+  margin: .5rem;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.chat .messageForm form {
+  width: 100%;
+  height: 5vh;
+}
+
+.chat .messageForm form input[type="text"] {
+  width: 50%;
+  height: 50%;
+}
+
+.chat .messageForm form input[type="text"]:focus {
+  outline: 0;
+}
+
+.chat .messageForm form input[type="submit"] {
+  border: 1px solid #3490DC;
+  outline: 0;
+  margin: .25rem 1rem;
+  padding: .4rem 1rem;
+  background: #3490DC;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: .5s all ease-in;
+}
+
+.chat .messageForm form input[type="submit"]:hover {
+  cursor: pointer;
+  background: rgb(38, 106, 162);
+  border: 1px solid rgb(38, 106, 162);
+}
+
+.typingIndicator {
+  font-size: .75rem;
+}
